@@ -8,8 +8,19 @@ import ru.ibs.practice.config.SeleniumConfig;
 import java.time.Duration;
 
 public class DriverManager {
+    private static WebDriver driver;
 
-    public static WebDriver initDriver() {
+    private DriverManager() {
+    }
+
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            driver = initializeDriver();
+        }
+        return driver;
+    }
+
+    private static WebDriver initializeDriver() {
         SeleniumConfig config = new SeleniumConfig();
         ChromeOptions options = new ChromeOptions();
 

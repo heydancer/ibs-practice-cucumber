@@ -1,29 +1,13 @@
 package ru.ibs.practice.tests.steps;
 
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.ru.И;
-import org.openqa.selenium.WebDriver;
-import ru.ibs.practice.tests.ui.manager.DriverManager;
+import ru.ibs.practice.tests.hooks.WebHooks;
 import ru.ibs.practice.tests.ui.pages.FoodPage;
 import ru.ibs.practice.tests.ui.pages.HomePage;
 
 public class SeleniumPracticeSteps {
-    private static WebDriver driver;
-    private final HomePage homePage = new HomePage(driver);
-    private final FoodPage foodPage = new FoodPage(driver);
-
-    @BeforeAll
-    public static void setUp() {
-        driver = DriverManager.initDriver();
-    }
-
-    @AfterAll
-    public static void closeBrowser() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+    private final HomePage homePage = new HomePage(WebHooks.getDriver());
+    private final FoodPage foodPage = new FoodPage(WebHooks.getDriver());
 
     @И("Открытие страницы по адресу: {string}")
     public void openHomePage(String url) {

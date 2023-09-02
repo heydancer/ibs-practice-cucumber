@@ -1,5 +1,7 @@
 package ru.ibs.practice.tests.hooks;
 
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.BeforeAll;
 import ru.ibs.practice.config.DataSourceConfig;
 
 import javax.sql.DataSource;
@@ -8,10 +10,12 @@ import java.sql.SQLException;
 
 public class DbHooks {
     private static Connection connection;
+    private static DataSource dataSource;
 
+    @BeforeAll
     public static void setUp() {
         DataSourceConfig config = new DataSourceConfig();
-        DataSource dataSource = config.getDataSource();
+        dataSource = config.getDataSource();
 
         try {
             connection = dataSource.getConnection();
@@ -20,6 +24,7 @@ public class DbHooks {
         }
     }
 
+    @AfterAll
     public static void close() {
         if (connection != null) {
             try {
@@ -32,5 +37,9 @@ public class DbHooks {
 
     public static Connection getConnection() {
         return connection;
+    }
+
+    public static DataSource getDataSource() {
+        return dataSource;
     }
 }

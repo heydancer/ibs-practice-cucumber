@@ -12,7 +12,7 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @ConfigurationParameters({
         @ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@all"),
         @ConfigurationParameter(key = FEATURES_PROPERTY_NAME, value = "src/test/resources/features"),
-        @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ru/ibs/practice/tests/steps"),
+        @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ru/ibs/practice/tests/steps,  ru/ibs/practice/tests/hooks"),
         @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm, pretty")
 })
 public class TestRunner {

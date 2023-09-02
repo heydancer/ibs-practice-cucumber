@@ -1,27 +1,12 @@
 package ru.ibs.practice.tests.steps;
 
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.ru.И;
 import ru.ibs.practice.tests.db.service.DataBaseService;
 import ru.ibs.practice.tests.db.service.JdbcDataBaseService;
 import ru.ibs.practice.tests.hooks.DbHooks;
 
-import java.sql.Connection;
 public class JdbcPracticeSteps {
-    private static DataBaseService service;
-
-    @BeforeAll
-    public static void setUp() {
-        DbHooks.setUp();
-        Connection connection = DbHooks.getConnection();
-        service = new JdbcDataBaseService(connection);
-    }
-
-    @AfterAll
-    public static void close() {
-        DbHooks.close();
-    }
+    private final DataBaseService service = new JdbcDataBaseService(DbHooks.getConnection());
 
     @И("Проверить наличие таблицы FOOD в схеме БД")
     public void checkTableInDB() {

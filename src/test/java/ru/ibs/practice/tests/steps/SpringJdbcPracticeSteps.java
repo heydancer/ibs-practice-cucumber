@@ -1,11 +1,12 @@
 package ru.ibs.practice.tests.steps;
 
 import io.cucumber.java.ru.И;
-import ru.ibs.practice.config.DataSourceConfig;
 import ru.ibs.practice.tests.db.service.DataBaseService;
 import ru.ibs.practice.tests.db.service.SpringDataBaseService;
+import ru.ibs.practice.tests.hooks.DbHooks;
+
 public class SpringJdbcPracticeSteps {
-    private final DataBaseService service = new SpringDataBaseService(new DataSourceConfig().getDataSource());
+    private final DataBaseService service = new SpringDataBaseService(DbHooks.getDataSource());
 
     @И("Spring. Проверить наличие таблицы FOOD в схеме БД")
     public void checkTableInDB() {
