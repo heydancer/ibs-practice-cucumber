@@ -4,13 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79bc99e1-9055-4023-b933-e7516f34508e" name="Changes" comment="feat: add resources">
+    <list default="true" id="79bc99e1-9055-4023-b933-e7516f34508e" name="Changes" comment="feat: add ui tests">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/service/DataBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/service/JdbcDataBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/steps/JdbcPracticeSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/steps/SpringJdbcPracticeSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/JdbcItemAdditionValidation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/jdbc/JdbcPracticeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/jdbc/general/BaseTestDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/spring/SpringJdbcPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/service/SpringDataBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/db/spring/general/BaseTestDB.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,16 +48,128 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/aleksand.ustiantcev/WorkingProject/ibs-practice-cucumber/src/test/resources",
+    "last_opened_file_path": "/Users/aleksand.ustiantcev/WorkingProject/ibs-practice-cucumber/src/test/resources/features",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "cdea8f87579f31357566ae5efb843406",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+      <recent name="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests" />
       <recent name="$PROJECT_DIR$/src/test/java/ru/ibs/practice/config" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: SpringJdbcItemAdditionValidation">
+    <configuration name="Feature: SpringJdbcItemAdditionValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SpringJdbcItemAdditionValidation.feature" />
+      <option name="GLUE" value="ru.ibs.practice.tests.db.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-cucumber" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: SpringJdbcItemAdditionValidation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Добавление товара в базу данных (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SpringJdbcItemAdditionValidation.feature" />
+      <option name="GLUE" value="ru.ibs.practice.tests.db.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-cucumber" />
+      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Добавление товара в базу данных (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/JdbcItemAdditionValidation.feature" />
+      <option name="GLUE" value="ru.ibs.practice.tests.db.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-cucumber" />
+      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Добавление товара в базу данных" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/check.feature" />
+      <option name="GLUE" value="ru.ibs.practice.tests.db.spring.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-cucumber" />
+      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ibs-practice-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ibs.practice.tests.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ibs.practice.tests.runner" />
+      <option name="MAIN_CLASS_NAME" value="ru.ibs.practice.tests.runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: SpringJdbcItemAdditionValidation" />
+        <item itemvalue="Cucumber Java.Scenario: Добавление товара в базу данных (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Добавление товара в базу данных (2)" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Добавление товара в базу данных" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,7 +180,8 @@
       <option name="presentableId" value="Default" />
       <updated>1693590799850</updated>
       <workItem from="1693590800958" duration="1000" />
-      <workItem from="1693592000597" duration="307000" />
+      <workItem from="1693592000597" duration="2664000" />
+      <workItem from="1693602713507" duration="10119000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add resources">
       <created>1693592154846</created>
@@ -57,7 +190,35 @@
       <option name="project" value="LOCAL" />
       <updated>1693592154846</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: maven">
+      <created>1693592372005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693592372005</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add config files">
+      <created>1693592430300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693592430300</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add db tests">
+      <created>1693592507648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693592507648</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add ui tests">
+      <created>1693592542767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693592542767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +237,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add resources" />
+    <MESSAGE value="feat: maven" />
+    <MESSAGE value="feat: add config fales" />
+    <MESSAGE value="feat: add config files" />
+    <MESSAGE value="feat: add db tests" />
+    <MESSAGE value="feat: add ui tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add ui tests" />
   </component>
 </project>
