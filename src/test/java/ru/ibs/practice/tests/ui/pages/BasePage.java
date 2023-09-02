@@ -1,6 +1,5 @@
 package ru.ibs.practice.tests.ui.pages;
 
-import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,6 +1,5 @@
 package ru.ibs.practice.tests.ui.pages;
 
-import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,7 @@ public class FoodPage extends BasePage {
     public FoodPage(WebDriver driver) {
         super(driver);
     }
-    @Step("Нажать кнопку 'Добавить'")
+
     public FoodPage clickAddProductButton() {
         log.info("Нажатие кнопки 'Добавить'");
 
@@ -23,7 +22,7 @@ public class FoodPage extends BasePage {
 
         return this;
     }
-    @Step("Ввести в поле 'Наименование' название {productName} на кириллице")
+
     public FoodPage inputProductName(String productName) {
         log.info("Ввод в поле 'Наименование' название овоща на кириллице '{}'", productName);
 
@@ -34,7 +33,7 @@ public class FoodPage extends BasePage {
 
         return this;
     }
-    @Step("Выбрать в выпадающем списке 'Тип'")
+
     public FoodPage selectTypeOfVegetable() {
         log.info("Выбор в выпадающем списке 'Тип' значение 'Овощ'");
 
@@ -45,7 +44,7 @@ public class FoodPage extends BasePage {
 
         return this;
     }
-    @Step("Установить состояние чекбокса 'Экзотический'")
+
     public FoodPage setExoticCheckBoxToFalse() {
         log.info("Установка состояние чекбокса 'Экзотический' в false");
 
@@ -71,7 +70,7 @@ public class FoodPage extends BasePage {
 
         return this;
     }
-    @Step("Нажать кнопку 'Сохранить'")
+
     public FoodPage clickSaveButton() {
         log.info("Нажатие кнопки 'Сохранить'");
 

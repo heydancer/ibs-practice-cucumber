@@ -25,7 +25,6 @@ public class JdbcDataBaseService implements DataBaseService {
         this.connection = connection;
     }
 
-
     @Override
     public void addProduct(String productName, String productType, int exotic) {
         log.info("Вставка новой записи в таблицу 'FOOD'");
