@@ -33,4 +33,11 @@ public class DriverManager {
 
         return driver;
     }
+
+    public static void quiteDriver() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+    }
 }

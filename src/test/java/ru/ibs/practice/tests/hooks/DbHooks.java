@@ -1,7 +1,7 @@
 package ru.ibs.practice.tests.hooks;
 
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import ru.ibs.practice.config.DataSourceConfig;
 
 import javax.sql.DataSource;
@@ -12,8 +12,8 @@ public class DbHooks {
     private static Connection connection;
     private static DataSource dataSource;
 
-    @BeforeAll
-    public static void setUp() {
+    @Before("@db")
+    public void setUp() {
         DataSourceConfig config = new DataSourceConfig();
         dataSource = config.getDataSource();
 
@@ -24,8 +24,8 @@ public class DbHooks {
         }
     }
 
-    @AfterAll
-    public static void close() {
+    @After("@db")
+    public void close() {
         if (connection != null) {
             try {
                 connection.close();

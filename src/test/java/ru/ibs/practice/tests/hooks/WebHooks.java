@@ -1,7 +1,7 @@
 package ru.ibs.practice.tests.hooks;
 
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import ru.ibs.practice.tests.ui.manager.DriverManager;
 
@@ -12,16 +12,14 @@ public class WebHooks {
         return driver;
     }
 
-    @BeforeAll
-    public static void initDriver() {
+    @Before("@ui")
+    public void initDriver() {
         driver = DriverManager.getDriver();
 
     }
 
-    @AfterAll
-    public static void closeDriver() {
-        if (driver != null) {
-            driver.quit();
-        }
+    @After("@ui")
+    public void closeDriver() {
+        DriverManager.quiteDriver();
     }
 }

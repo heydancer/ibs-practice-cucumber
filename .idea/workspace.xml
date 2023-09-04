@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79bc99e1-9055-4023-b933-e7516f34508e" name="Changes" comment="feat: добавил хуки">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/hooks/WebHooks.java" afterDir="false" />
+    <list default="true" id="79bc99e1-9055-4023-b933-e7516f34508e" name="Changes" comment="fix: исправил hooks">
+      <change afterPath="$PROJECT_DIR$/.idea/qualit_plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/hooks/DbHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/hooks/DbHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/hooks/WebHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/hooks/WebHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/JdbcPracticeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/JdbcPracticeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/SeleniumPracticeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/SeleniumPracticeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/SpringJdbcPracticeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/steps/SpringJdbcPracticeSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/ui/manager/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/practice/tests/ui/manager/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/JdbcItemAdditionValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/JdbcItemAdditionValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SeleniumAddProductValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SeleniumAddProductValidation.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/aleksand.ustiantcev/WorkingProject/ibs-practice-cucumber/src/test/resources/features&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aleksand.ustiantcev/WorkingProject/ibs-practice-cucumber&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,74 +71,34 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="Cucumber Java.Feature: SeleniumAddProductValidation">
+    <configuration name="Feature: JdbcItemAdditionValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/JdbcItemAdditionValidation.feature" />
+      <option name="GLUE" value="ru.ibs.practice.tests.steps ru.ibs.practice.tests.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ibs-practice-cucumber" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: JdbcItemAdditionValidation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: SeleniumAddProductValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SeleniumAddProductValidation.feature" />
-      <option name="GLUE" value="ru.ibs.practice.tests.steps" />
+      <option name="GLUE" value="ru.ibs.practice.tests.steps ru.ibs.practice.tests.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ibs-practice-cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: SeleniumAddProductValidation" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: SpringJdbcItemAdditionValidation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SpringJdbcItemAdditionValidation.feature" />
-      <option name="GLUE" value="ru.ibs.practice.tests.db.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ibs-practice-cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: SpringJdbcItemAdditionValidation" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Добавление товара в базу данных (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SpringJdbcItemAdditionValidation.feature" />
-      <option name="GLUE" value="ru.ibs.practice.tests.db.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ibs-practice-cucumber" />
-      <option name="NAME_FILTER" value="^Добавление товара в базу данных$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление товара в базу данных$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Добавление товара в базу данных" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Добавление овоща, экзотический = false" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SeleniumAddProductValidation.feature" />
-      <option name="GLUE" value="ru.ibs.practice.tests.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ibs-practice-cucumber" />
-      <option name="NAME_FILTER" value="^Добавление овоща\, экзотический \= false$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Добавление овоща\, экзотический \= false$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Добавление овоща, экзотический = false" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -165,13 +125,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: JdbcItemAdditionValidation" />
+      <item itemvalue="Cucumber Java.Feature: SeleniumAddProductValidation" />
+      <item itemvalue="JUnit.TestRunner" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: SeleniumAddProductValidation" />
-        <item itemvalue="Cucumber Java.Scenario: Добавление овоща, экзотический = false" />
-        <item itemvalue="Cucumber Java.Feature: SpringJdbcItemAdditionValidation" />
-        <item itemvalue="Cucumber Java.Scenario: Добавление товара в базу данных (1)" />
+        <item itemvalue="Cucumber Java.Feature: JdbcItemAdditionValidation" />
+        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +153,9 @@
       <workItem from="1693637320188" duration="7513000" />
       <workItem from="1693653630439" duration="1590000" />
       <workItem from="1693683920597" duration="481000" />
-      <workItem from="1693684705779" duration="5888000" />
+      <workItem from="1693684705779" duration="6227000" />
+      <workItem from="1693827223604" duration="1097000" />
+      <workItem from="1693828340202" duration="576000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add resources">
       <created>1693592154846</created>
@@ -241,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693654982099</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix: исправил hooks">
+      <created>1693693104990</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693693104990</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +239,14 @@
     <MESSAGE value="feat: add ui tests" />
     <MESSAGE value="feat: add db cucumber" />
     <MESSAGE value="feat: добавил хуки" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: добавил хуки" />
+    <MESSAGE value="fix: исправил hooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: исправил hooks" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="DbHooks.getConnection()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
