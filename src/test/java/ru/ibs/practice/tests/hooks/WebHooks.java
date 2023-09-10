@@ -2,24 +2,20 @@ package ru.ibs.practice.tests.hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.openqa.selenium.WebDriver;
-import ru.ibs.practice.tests.ui.manager.DriverManager;
+import ru.ibs.practice.framework.manager.common.PropertiesManager;
+import ru.ibs.practice.framework.manager.ui.DriverManager;
 
 public class WebHooks {
-    private static WebDriver driver;
-
-    public static WebDriver getDriver() {
-        return driver;
-    }
+    private final PropertiesManager propertiesManager = PropertiesManager.getPropertiesManager();
+    private final DriverManager driverManager = DriverManager.getDriverManager();
 
     @Before("@ui")
     public void initDriver() {
-        driver = DriverManager.getDriver();
-
+        driverManager.getDriver().get(propertiesManager.get("base.url"));
     }
 
-    @After("@ui")
+    @After("@last")
     public void closeDriver() {
-        DriverManager.quiteDriver();
+        driverManager.quitDriver();
     }
 }
